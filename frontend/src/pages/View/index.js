@@ -34,12 +34,14 @@ class View extends Component {
           spouses: []
         }
       ],
-      rootId: 'kuVISwh7w'
+      // rootId: 'kuVISwh7w'
+      rootId: 'HkqEDLvxE'
     }
   }
 
   componentDidMount() {
     // this.props.getTree({person_id: 3});
+    console.log('nodes', this.nodes)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -79,7 +81,7 @@ class View extends Component {
                       height: HEIGHT,
                       transform: `translate(${node.left * (WIDTH / 2)}px, ${node.top * (HEIGHT / 2)}px)`,
                     }}
-                  />                  
+                  />
                 )}
               />
             </PinchZoomPan>

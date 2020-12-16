@@ -19,7 +19,8 @@ class FamilyNode extends React.Component {
             styles.inner,
             styles[this.props.node.gender],
             this.props.isRoot && styles.isRoot,
-          )}          
+          )}
+          style={{border: '2px solid'}}          
         />
         {this.props.node.hasSubTree && (
           <div
