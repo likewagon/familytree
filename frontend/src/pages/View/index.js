@@ -14,12 +14,6 @@ import {
 import defaultUserImg from "../../assets/images/defaultUserImg.png";
 import { Icons } from '../../constants';
 
-import nodes from 'relatives-tree/samples/average-tree.json';
-import { IFamilyNode, IFamilyExtNode } from 'relatives-tree/lib/types';
-import PinchZoomPan from '../../components/PinchZoomPan';
-import FamilyNode from '../../components/FamilyNode';
-import styles from './index.css';
-
 class View extends Component {
   constructor(props) {
     super(props);
@@ -34,8 +28,7 @@ class View extends Component {
           spouses: []
         }
       ],
-      // rootId: 'kuVISwh7w'
-      rootId: 'HkqEDLvxE'
+
     }
   }
 
@@ -61,30 +54,7 @@ class View extends Component {
       <React.Fragment>
         <div className="page-content">
           <Container>
-            <PinchZoomPan
-              min={0.5}
-              max={2.5}
-              captureWheel
-              className={styles.wrapper}
-            >
-              <ReactFamilyTree
-                nodes={nodes}
-                rootId={this.state.rootId}
-                width={WIDTH}
-                height={HEIGHT}
-                renderNode={(node) => (
-                  <FamilyNode
-                    key={node.id}
-                    node={node}
-                    style={{
-                      width: WIDTH,
-                      height: HEIGHT,
-                      transform: `translate(${node.left * (WIDTH / 2)}px, ${node.top * (HEIGHT / 2)}px)`,
-                    }}
-                  />
-                )}
-              />
-            </PinchZoomPan>
+            
           </Container>
         </div>
       </React.Fragment>

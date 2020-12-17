@@ -41,7 +41,6 @@
     "react-datepicker": "^2.14.0",
     "react-dom": "^16.13.0",
     "react-dropzone": "^10.2.1",
-    "react-family-tree": "^2.0.2",
     "react-firebase-file-uploader": "^2.4.3",
     "react-geocode": "^0.2.2",
     "react-image-lightbox": "^5.1.1",
@@ -95,8 +94,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "pinch-zoom-pan": "^3.0.0",
-    "relatives-tree": "^2.1.1"
-  }
+  "devDependencies": {}
 }
